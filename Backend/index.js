@@ -4,8 +4,8 @@ const app=express();
 
 
 const {connection}=require("./config/db");
-const { userRouter } = require("./routes/userRoutes");
-const { chatRoomRouter } = require("./routes/chatroomRoutes");
+const  userRouter  = require("./routes/userRoutes");
+const  chatRoomRouter  = require("./routes/chatroomRoutes");
 
 
 require("dotenv").config()
