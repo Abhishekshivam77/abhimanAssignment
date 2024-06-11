@@ -1,8 +1,8 @@
 const express = require('express');
-const { createRoom, joinRoom } = require('../controllers/chatroomController');
-const router = express.Router();
+const { createRoom, joinRoom } = require("../controller/chatroomcontroller");
+const chatRoomRouter = express.Router();
 
-router.post('/api/chatrooms', createRoom);
-router.post('/api/joinroom', joinRoom);
+chatRoomRouter.post('/api/chatrooms', createRoom);
+chatRoomRouter.post('/api/joinroom', joinRoom);
 
-module.exports = router;
+module.exports = chatRoomRouter;

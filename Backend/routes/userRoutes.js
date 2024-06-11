@@ -1,8 +1,8 @@
 const express = require('express');
-const { getProfile, sendFriendRequest } = require('../controllers/userController');
-const router = express.Router();
+const { getProfile, sendFriendRequest } = require('../controller/usercontroller');
+const UserRouter = express.Router();
 
-router.get('/api/profile/:userId', getProfile);
-router.post('/api/friend-requests', sendFriendRequest);
+UserRouter.get('/api/profile/:userId', getProfile);
+UserRouter.post('/api/friend-requests', sendFriendRequest);
 
-module.exports = router;
+module.exports = UserRouter;

@@ -1,4 +1,5 @@
-const { Room, User } = require('../models');
+const { Room } = require('../model/chatroom');
+const { User } = require('../model/user');
 
 exports.createRoom = async (req, res) => {
   const { name, id, pass } = req.body;
